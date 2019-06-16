@@ -1,0 +1,48 @@
+.product-presentation-wrapper
+  padding: 100px 50px
+  .presentation-content
+    width: 70%
+    margin: 0 auto
+    .presentation-img
+      width: 95px
+      margin: 0 auto
+    h1
+      width: 600px
+      margin: 30px auto
+      font-weight: 300
+      font-size: 35px
+      text-align: center
+      color: #555559
+    button
+      display: block
+      margin: 0 auto
+      padding: 15px 25px
+      background: #286782
+      border-radius: 5px
+      color: #ffffff
+      border: none
+      font-size: 13px
+      font-weight: 400
+      font-family: 'Open Sans', sans-serif
+      outline: none
+      &:hover
+        cursor: pointer
+        background: #245d76
+        box-shadow: 1px 1px 5px 0 #ababab
+
+@media screen and (max-width: 800px)
+  .product-presentation-wrapper
+    .presentation-content
+      width: 100%
+      h1
+        width: 100%
+@media screen and (max-width: 400px)
+  .product-presentation-wrapper
+    padding: 30px
+    .presentation-content
+      .presentation-img
+        width: 50px
+        img
+          width: 50px
+      h1
+        font-size: 20px

@@ -1,0 +1,56 @@
+.product-list-wrapper
+  width: 100%
+
+.product-list-content
+  display: flex
+  height: 350px
+  margin: 0 7px
+  .product-list-text-wrapper, .product-list-img
+    position: relative
+    width: 50%
+    background-color: #ffffff
+  .product-list-img
+    img
+      height: 100%
+      width: 100%
+  .product-list-text-wrapper
+    .product-list-text
+      width: 60%
+      margin: 110px 85px
+      color: #555559
+      h2
+        font-size: 15px
+      p
+        font-size: 13px
+    .product-list-text::before
+      content: ''
+      position: absolute
+      left: 50px
+      top: 120px
+      display: block
+      width: 15px
+      height: 2px
+      background: #7ea4b4
+
+
+@media screen and (max-width: 660px)
+  .product-list-wrapper
+    .product-list-content
+      flex-direction: column
+      height: auto
+      min-height: 350px
+      margin-top: 25px
+      .product-list-text-wrapper, .product-list-img
+        width: 100%
+    .product-list-img
+      order: -2
+    .product-list-text-wrapper
+      .product-list-text
+        width: 70%
+        margin: 110px 55px
+        h2
+          font-size: 15px
+        p
+          font-size: 13px
+      .product-list-text::before
+        left: 20px

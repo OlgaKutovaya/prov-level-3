@@ -1,0 +1,96 @@
+.contact-wrapper
+  width: 65%
+  margin: 0 auto
+  padding: 50px 0
+  background: #fbfafa
+  color: #555559
+
+  .contact-container
+    width: 500px
+    margin: 0 auto
+
+    .form-heading
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      h2
+        text-transform: uppercase
+        font-weight: 800
+        margin-bottom: 40px
+
+      div
+        img
+          width: 95px
+
+    .input-wrapper
+      display: block
+      margin-bottom: 40px
+
+      span
+        padding-right: 15px
+        font-weight: 600
+
+      input
+        border: none
+        background: none
+        border-bottom: 1px solid gray
+        outline: none
+
+        &:focus::placeholder
+          color: transparent
+
+      .input-support
+        resize: none
+        min-height: 100px
+        margin-top: 10px
+        padding: 10px
+        width: 95%
+        background: none
+        border: 1px solid #e6e6e6
+        border-radius: 7px
+        outline: 0
+
+        &::placeholder
+          color: #777777
+          font-weight: 100
+
+        &:focus::placeholder
+          color: transparent
+          transition: 0.2s
+
+  button
+    display: block
+    margin: 0 auto
+    padding: 10px 30px
+    background: #286782
+    border-radius: 5px
+    color: #ffffff
+    border: none
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: 400
+    font-family: 'Open Sans', sans-serif
+    outline: none
+
+    &:hover
+      cursor: pointer
+      background: #245d76
+      box-shadow: 1px 1px 5px 0 #ababab
+
+@media screen and (max-width: 1420px)
+  .contact-wrapper
+    width: 100%
+
+@media screen and (max-width: 550px)
+  .contact-wrapper
+    .contact-container
+      width: 270px
+
+      .form-heading
+        div
+          img
+            width: 60px
+
+    .input-support
+      width: 80%
