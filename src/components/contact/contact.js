@@ -21,7 +21,7 @@ class Contact extends Component {
       const data = await response.json();
       this.setState(this.initialState);
       console.log('Data: ' + JSON.stringify(data));
-      alert('Thank you! Message was sent successfully');
+      alert('Thank you! Message has been sent successfully');
    };
 
    handleChange = (event) => {
@@ -30,20 +30,16 @@ class Contact extends Component {
       const fieldValue = event.target.value;
 
       newState[fieldName] = fieldValue;
-      this.setState({...newState}, () => {
-         console.log(this.state);
-      });
+      this.setState({...newState});
    };
 
    render() {
       return (
          <div className="contact-wrapper">
             <div className='contact-container'>
-               <form method="POST"
-                     action="https://formula-test-api.herokuapp.com/contact"
-                     onSubmit={(event) =>
-                        this.submitHandler(event)
-                     }
+               <form onSubmit={(event) =>
+                  this.submitHandler(event)
+               }
                >
                   <div className="form-heading">
                      <h2 className='form-heading'>Contact us</h2>

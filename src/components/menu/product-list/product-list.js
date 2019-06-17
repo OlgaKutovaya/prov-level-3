@@ -36,8 +36,8 @@ class ProductList extends Component {
       const renderMenuItem = (item, index) => {
          return (
             <div className="product-list-content" key={item.id}>
-               { (index % 2 === 0 ? renderMenuText(item) : renderMenuImage(item))}
-               { (index % 2 !== 0 ? renderMenuText(item) : renderMenuImage(item))}
+               {(index % 2 === 0 ? renderMenuText(item) : renderMenuImage(item))}
+               {(index % 2 !== 0 ? renderMenuText(item) : renderMenuImage(item))}
             </div>
          )
       };
