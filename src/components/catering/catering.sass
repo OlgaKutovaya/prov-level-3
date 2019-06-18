@@ -2,9 +2,138 @@
   width: 65%
   margin: 0 auto
   padding: 50px 0
-  background: #fbfafa
   text-align: center
+  background: #fbfafa
+
+  .catering-block
+    display: flex
+    justify-content: space-between
+    margin: 50px auto
+
+    .catering-info-wrapper
+      position: relative
+      width: 450px
+      height: 300px
+      margin: 0 auto
+      box-shadow: 3px 3px 10px 0 #737373
+
+      .view
+        img
+          width: 100%
+          height: 100%
+          transition: all 0.4s ease-in-out 0.5s
+
+        .text-content
+          position: absolute
+          z-index: 1000
+          width: 100%
+          height: 60px
+          bottom: 0
+          background: rgba(37, 4, 7, 0.5)
+
+          h2
+            color: #dcdcdc
+            text-align: center
+            letter-spacing: 0.2rem
+            text-transform: uppercase
+            font-size: 20px
+
+        .mask
+          width: 450px
+          height: 300px
+          position: absolute
+          top: 0
+          left: 0
+          overflow: hidden
+          background-color: rgba(37, 4, 7, 0.5)
+          filter: alpha(opacity=0)
+          opacity: 0
+          transition: all 0.3s ease-in 0.4s
+
+          h3
+            color: #fff
+            letter-spacing: 0.1rem
+            text-align: center
+            position: relative
+            font-size: 17px
+            padding: 10px
+            filter: alpha(opacity=0)
+            opacity: 0
+            border-bottom: 1px solid rgba(19, 3, 12, 0.92)
+            background: transparent
+            margin: 20px 40px 0 40px
+            transform: scale(10)
+            transition: all 0.3s ease-in-out 0.1s
+
+          p
+            padding: 10px 20px 20px
+            text-align: center
+            font-style: italic
+            font-size: 17px
+            color: #fff
+            filter: alpha(opacity=0)
+            opacity: 0
+            transform: scale(10)
+            transition: all 0.3s ease-in-out 0.2s
+
+      &:hover
+        .mask
+          filter: alpha(opacity=100)
+          opacity: 1
+          transition-delay: 0s
+
+      view:hover img
+        transition-delay: 0s
+
+      .view:hover h3
+        filter: alpha(opacity=100)
+        opacity: 1
+        transform: scale(1)
+        transition-delay: 0.1s
+
+      .view:hover p
+        filter: alpha(opacity=100)
+        opacity: 1
+        transform: scale(1)
+        transition-delay: 0.2s
 
 @media screen and (max-width: 1420px)
   .catering-container
     width: 100%
+
+@media screen and (max-width: 950px)
+  .catering-container
+    width: 100%
+    padding: 0 0 50px 0
+
+    .catering-block
+      flex-direction: column
+      margin: 0 auto
+
+      .catering-info-wrapper
+        margin-top: 40px
+
+@media screen and (max-width: 500px)
+  .catering-container
+    .catering-block
+      .catering-info-wrapper
+        width: 290px
+        height: 194px
+
+        .view
+          .text-content
+            height: 40px
+
+            h2
+              font-size: 15px
+
+          .mask
+            width: 290px
+            height: 193px
+
+            h3
+              padding-bottom: 5px
+              font-size: 15px
+
+            p
+              font-size: 12px
