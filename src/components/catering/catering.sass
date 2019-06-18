@@ -32,11 +32,21 @@
           background: rgba(37, 4, 7, 0.5)
 
           h2
+            position: relative
             color: #dcdcdc
             text-align: center
             letter-spacing: 0.2rem
             text-transform: uppercase
             font-size: 20px
+
+            .hand-img
+              display: block
+              position: absolute
+              top: 8px
+              right: 5px
+              width: 35px
+              height: 35px
+              transform: rotate(-45deg)
 
         .mask
           width: 450px
@@ -126,6 +136,12 @@
 
             h2
               font-size: 15px
+
+              .hand-img
+                top: 0
+                right: 3px
+                width: 27px
+                height: 27px
 
           .mask
             width: 290px

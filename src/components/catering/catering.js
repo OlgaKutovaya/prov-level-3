@@ -50,7 +50,9 @@ class Catering extends Component {
                <div className="view">
                   <img src={item.imgUrl} alt=""/>
                   <div className="text-content">
-                     <h2>{item.title}</h2>
+                     <h2>{item.title}
+                        <img className="hand-img" src="/images/catering/hand.png" alt=""/>
+                     </h2>
                   </div>
                   <div className="mask">
                      <h3>{item.title}</h3>
