@@ -43,7 +43,7 @@ class Contact extends Component {
                >
                   <div className="form-heading">
                      <h2 className='form-heading'>Contact us</h2>
-                     <div><img src="/images/burger-contact.png" alt=""/></div>
+                     <div><img src="/images/contact-us/envelop.png" alt=""/></div>
                   </div>
                   <label className='input-wrapper'>
                      <span>Name:</span>

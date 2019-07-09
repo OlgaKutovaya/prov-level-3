@@ -5,6 +5,78 @@
   background: #fbfafa
   text-align: center
 
+  .about-author-wrapper
+    display: flex
+    width: 90%
+    margin: 1% auto 0
+
+
+  .block-info-wrapper
+    display: flex
+    width: 100%
+    justify-content: space-around
+
+  .block-info
+    width: 300px
+    height: 100%
+    margin: 0 5px
+    border-radius: 7px
+    box-shadow: 0 0 4px 0 #746b61
+
+    .img-author
+      width: 160px
+      height: 160px
+      margin: 20px auto 30px
+      border-radius: 50%
+      box-shadow: 0 0 10px 0 #191a1c
+
+    p
+      margin: 0 20px
+      padding: 0 0 20px 0
+      text-align: justify
+      color: #260b10
+
+
+  .block-info:hover
+    box-shadow: 0 0 5px 0 #4c433b
+    transition: 0.2s
+
+.face-1
+  background: url('/images/about-us/face1.jpg') no-repeat center
+  background-size: cover
+
+
+.face-2
+  background: url('/images/about-us/face2.jpg') no-repeat center
+  background-size: cover
+
+
+.face-3
+  background: url('/images/about-us/face3.jpg') no-repeat center
+  background-size: cover
+
 @media screen and (max-width: 1420px)
   .about-us-container
     width: 100%
+
+@media screen and (max-width: 800px)
+  .about-us-container
+    .block-info-wrapper
+      flex-direction: column
+
+      .block-info
+        width: 70%
+        margin: 0 auto 20px
+
+@media screen and (max-width: 450px)
+  .about-us-container
+    .block-info-wrapper
+      .block-info
+        width: 90%
+
+        .img-author
+          width: 125px
+          height: 125px
+
+        p
+          font-size: 0.9rem

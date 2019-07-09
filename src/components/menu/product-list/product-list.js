@@ -47,7 +47,7 @@ class ProductList extends Component {
             <div className="product-list-img">
                {/*<img src={item.backgroundURL}"/>
                // API image URLs from CDN return 404, so we use default one*/}
-               <img src="/images/layer-1.png" alt="burger"/>
+               <img src="/images/menu/layer-1.png" alt="burger"/>
             </div>
          )
       };
